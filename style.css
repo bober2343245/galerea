@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'StratosSkyeng', sans-serif;
+    background-color: #0F0804;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(images/13.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 80.49%, #0F0804 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    margin: auto;
+    font-size: 96px;
+    text-align: center;
+    color: white;
+    max-width: 658px;
+    font-weight: 400;
+}
+
+.header__link {
+    height: 90px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(11.5px);
+}
+
+.header__link:hover {
+    opacity: .8;
+}
+
+.header__anchor {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 1060px;
+    list-style-type: none;
+    margin: 173px auto;
+
+}
+
+.gallery__item {
+    max-width: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.gallery__item:after{
+    content:'' ;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color:white;
+    display: none;
+    
+}
+.gallery__item:hover::after{
+    display: block;
+}
+.imegh_title{
+    position: absolute;
+    color: aliceblue;
+    max-width: 330px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto ;
+    display: none;
+}
+.gallery__item:hover .imegh_title{
+    display: block;
+}
+
+.image {
+    width: 100%;
+    
+}
+.button{
+    background-image: url(icon/like_not_aktiv.svg);
+    width: 46px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom:5px;
+    right: 55px;
+}
+.button_coash{
+    background-image: url(icon/Choosen\ \(1\).svg);
+    width: 36px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom:5px;
+    right: 5px;
+}
+.button_coash:hover{
+    background-image: url(icon/Choosen_active.svg);
+
+}
+.button:hover{
+    background-image: url(icon/Like_active.svg);
+}
+.footer {
+    height: 100vh;
+    background-image: url(./images/7.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__overlay {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #0F0804 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.footer__text {
+    margin: auto;
+    font-size: 40px;
+    color: white;
+}
